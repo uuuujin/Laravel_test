@@ -5,14 +5,14 @@ export default function NavBar() {
     const router = useRouter();
     return (
         <nav>
-            <a className={router.pathname === "/" ? "active" : ""}
+            <Link className={router.pathname === "/" ? "active" : ""}
                 href="/" >
                     HOME
-            </a>
-            <a className={router.pathname === "/about" ? "active" : ""}
+            </Link>
+            <Link className={router.pathname === "/about" ? "active" : ""}
                 href="/about" >
                     ABOUT
-            </a>
+            </Link>
             <style jsx>{`
               .active {
               color :pink;
